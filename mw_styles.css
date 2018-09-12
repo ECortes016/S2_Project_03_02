@@ -14,13 +14,14 @@
 
 
 /* Structural Styles */
+/* This will give the basic color and text needed for the base of the entire website. Mostly text styles and background colors. As well as a font stack for the browser to use. The footer is also made nicer such as smaller text and centered text. */
 html {
     background-color: rgb(173, 189, 227);
 }
 
 body {
+    font-family: "Century Gothic", sans-serif;
     background-color: rgb(227, 210, 173);
-    font-family: 'Century Gothic', sans-serif;
 }
 
 footer {
@@ -38,12 +39,14 @@ address {
 }
 
 /* Heading Styles */
+/* Font weight makes the header text have a basic look to them. */
 h1,
 h2 {
     font-weight: normal;
 }
 
 /* Navigation Styles */
+/* Inside the nav menu, the discs were removed for a cleaner look as well as spacing in between lines. While hovering over the links it changes color and visited sites do not change color. */
 nav>ul {
     list-style-type: none;
     line-height: 2em;
@@ -62,12 +65,90 @@ nav>ul>li>a:active {
 }
 
 /* Article Styles */
-article>h1#tour_summary {
+article#tour_summary>header>h1 {
     font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+article#tour_summary>p {
+    font-size: 1.1em;
+}
+
+article#tour_summary>p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-size: 1.2em;
 }
 
 /* Aside Styles */
+/* Inside the aside element, all of the headings such as Day 1, Day 2, etc. are made a specific color and also the paragraphs going on with them are the same color. The font inside h1 elment, inside the aside, is made bigger and the h2 is made smaller. */
+aside#tour_itinerary>header>h1 {
+    font-size: 1.2em;
+}
 
+aside#tour_itinerary>h2 {
+    font-size: 0.9em
+}
 
+aside#tour_itinerary>p {
+    font-size: 0.8em;
+}
+
+aside#tour_itinerary>h2:nth-of-type(1) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>h2:nth-of-type(3) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>h2:nth-of-type(5) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>h2:nth-of-type(2) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>h2:nth-of-type(4) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>h2:nth-of-type(6) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>p:nth-of-type(1) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>p:nth-of-type(3) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>p:nth-of-type(5) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>p:nth-of-type(2) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>p:nth-of-type(4) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>p:nth-of-type(6) {
+    color: rgb(81, 95, 175);
+}
 
 /* Blockquote Styles */
+/* The quote inside the blockquote is given a background color the same as the html color. The font color is set to a white color with an opacity set. The padding is also changed. */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgb(255, 255, 255);
+    opacity: 0.65;
+}
+
+blockquote>p {
+    padding: 2.5px 10px;
+}
